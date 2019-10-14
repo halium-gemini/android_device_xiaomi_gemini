@@ -48,14 +48,15 @@ PRODUCT_PACKAGES += \
     init.target.rc
     
 PRODUCT_PACKAGES += \
-    libubuntu_application_api_32 \
-    libcameraservice_32 \
-    libdroidmedia_32 \
-    libcamera_compat_layer_32 \
-    libui_compat_layer_32 \
-    libsf_compat_layer_32 \
-    libaudiofingerglue_32 \
-    libminisf_32 \
+    libubuntu_application_api \
+    libcameraservice \
+    libdroidmedia \
+    libmedia_compat_layer \
+    libcamera_compat_layer \
+    libui_compat_layer \
+    libsf_compat_layer \
+    libaudioflingerglue \
+    libminisf \
     minisfservice \
     miniafservice \
     minimediaservice
@@ -96,7 +97,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/libs/liblowi_client.so:system/lib/liblowi_client.so \
     $(LOCAL_PATH)/ubuntu/libs/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
     $(LOCAL_PATH)/ubuntu/libs/libulp2.so:system/lib/libulp2.so \
-    $(LOCAL_PATH)/ubuntu/libs/libaudioflingerglue.so:system/lib/libaudioflingerglue.so \
     $(LOCAL_PATH)/ubuntu/70-gemini.rules:system/halium/lib/udev/rules.d/70-gemini.rules \
     $(LOCAL_PATH)/ubuntu/apparmor.d/local/usr.bin.media-hub-server:system/halium/etc/apparmor.d/local/usr.bin.media-hub-server \
     $(LOCAL_PATH)/ubuntu/apparmor.d/abstractions/base:system/halium/etc/apparmor.d/abstractions/base \
@@ -105,4 +105,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/unblock_wakelock.sh:system/etc/unblock_wakelock.sh \
     $(LOCAL_PATH)/ubuntu/hci_qcomm_init:system/bin/hci_qcomm_init \
     $(LOCAL_PATH)/ubuntu/touch.pa:system/halium/etc/pulse/touch.pa \
+    $(LOCAL_PATH)/ubuntu/gemini.conf:system/halium/etc/ubuntu-touch-session.d/gemini.conf \
+    $(LOCAL_PATH)/ubuntu/gemini.conf:system/halium/etc/ubuntu-touch-session.d/android.conf \
     $(LOCAL_PATH)/ubuntu/init_hcismd_up.sh:/system/etc/init_hcismd_up.sh
