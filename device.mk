@@ -116,4 +116,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.t-o.quirk.forcesink=sink.primary_output \
     ro.t-o.quirk.forcesource=source.record_24_primary_input \
     ro.qc.sensors.wl_dis=true \
-    ril.num_slots=2
+    ril.num_slots=2 \
+    ubuntu.widi.supported=1
