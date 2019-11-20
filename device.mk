@@ -59,7 +59,10 @@ PRODUCT_PACKAGES += \
     libminisf \
     minisfservice \
     miniafservice \
-    minimediaservice
+    minimediaservice \
+    camera_service \
+    libcamera_shim \
+    gst-droid
 
 PRODUCT_PACKAGES += \
     charger_res_images
