@@ -106,11 +106,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/apparmor.d/abstractions/base:system/halium/etc/apparmor.d/abstractions/base \
     $(LOCAL_PATH)/ubuntu/ofono.override:system/halium/etc/init/ofono.override \
     $(LOCAL_PATH)/ubuntu/timekeeper.conf:system/halium/etc/init/timekeeper.conf \
-    $(LOCAL_PATH)/ubuntu/unblock_wakelock.sh:system/etc/unblock_wakelock.sh \
     $(LOCAL_PATH)/ubuntu/hci_qcomm_init:system/bin/hci_qcomm_init \
     $(LOCAL_PATH)/ubuntu/touch.pa:system/halium/etc/pulse/touch.pa \
     $(LOCAL_PATH)/ubuntu/gemini.conf:system/halium/etc/ubuntu-touch-session.d/gemini.conf \
     $(LOCAL_PATH)/ubuntu/gemini.conf:system/halium/etc/ubuntu-touch-session.d/android.conf \
+    $(LOCAL_PATH)/ubuntu/wlan_restart.py:system/halium/usr/share/wlan_restart/wlan_restart.py \
     $(LOCAL_PATH)/ubuntu/init_hcismd_up.sh:/system/etc/init_hcismd_up.sh
 
 # Ubuntu Property Overrides
@@ -118,6 +118,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.t-o.quirk.forcesink=sink.primary_output \
     ro.t-o.quirk.forcesource=source.record_24_primary_input \
-    ro.qc.sensors.wl_dis=true \
     ril.num_slots=2 \
     ubuntu.widi.supported=1
